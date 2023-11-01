@@ -25,6 +25,8 @@
         utype="spec:Spectrum.DataID.Title" value="FV Tau/c" />
       <PARAM ID="Target" arraysize="*" datatype="char" name="Target"
         utype="spec:Spectrum.Target.Name" value="FV Tau/c" />
+      <PARAM ID="Redshift" datatype="double" name="Redshift" ucd="src.redshift"
+        utype="spec:Spectrum.Target.Redshift" value="0.0002435" />
       <PARAM ID="SpectralAxisName" arraysize="*" datatype="char" name="SpectralAxisName"
         utype="spec:Spectrum.Char.SpectralAxis.Name" value="wavelength" />
       <PARAM ID="SpectralAxisUcd" arraysize="*" datatype="char" name="SpectralAxisUcd"
@@ -56,6 +58,18 @@
         unit="d" utype="spec:Spectrum.Char.TimeAxis.Coverage.Location.Value" value="54928.980282" />
       <PARAM ID="TimeExtent" datatype="double" name="TimeExtent" ucd="time.duration" unit="s"
         utype="spec:Spectrum.Char.TimeAxis.Coverage.Bounds.Extent" value="6.29" />
+      <PARAM ID="SpectralFrameRefPos" datatype="char" name="SpectralFrameRefPos"
+        utype="spec:Spectrum.CoordSys.SpectralFrame.RefPos" ucd="sdm:spect.frame"
+        value="CUSTOM" arraysize="*" />
+      <PARAM ID="SpectralFrameRedshift" datatype="double" name="SpectralFrameRedshift"
+        utype="spec:Spectrum.CoordSys.SpectralFrame.Redshift" value="0.005678"/>
+      <PARAM ID="DerivedRedshift" datatype="double" name="DerivedRedshift"
+        utype="spec:Spectrum.Derived.Redshift.Value" value="0.000197439" />
+      <PARAM ID="RedshiftStatError" datatype="float" name="RedshiftStatError"
+        ucd="stat.error;src.redshift" utype="spec:Spectrum.Derived.Redshift.StatError"
+        value="0.000166012" />
+      <PARAM ID="RedshiftConfidence" datatype="float" name="RedshiftConfidence"
+        utype="spec:Spectrum.Derived.Redshift.Confidence" value="0.360793" />
       <GROUP ID="Data.SpectralAxis" name="Data.SpectralAxis" utype="spec:Spectrum.Data.SpectralAxis">
         <DESCRIPTION>Spectral Axis Data</DESCRIPTION>
         <FIELDref ref="wavelength" />
