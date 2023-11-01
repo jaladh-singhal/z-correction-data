@@ -56,6 +56,9 @@
         unit="d" utype="spec:Spectrum.Char.TimeAxis.Coverage.Location.Value" value="54928.980282" />
       <PARAM ID="TimeExtent" datatype="double" name="TimeExtent" ucd="time.duration" unit="s"
         utype="spec:Spectrum.Char.TimeAxis.Coverage.Bounds.Extent" value="6.29" />
+      <PARAM ID="SpectralFrameRefPos" datatype="char" name="SpectralFrameRefPos"
+        utype="spec:Spectrum.CoordSys.SpectralFrame.RefPos" ucd="sdm:spect.frame"
+        value="BARYCENTER" arraysize="*" />
       <GROUP ID="Data.SpectralAxis" name="Data.SpectralAxis" utype="spec:Spectrum.Data.SpectralAxis">
         <DESCRIPTION>Spectral Axis Data</DESCRIPTION>
         <FIELDref ref="wavelength" />
